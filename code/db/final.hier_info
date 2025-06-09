@@ -1,0 +1,250 @@
+|final
+clk => clk.IN3
+reset => reset.IN2
+sw[0] => sw[0].IN1
+sw[1] => sw[1].IN1
+sw[2] => sw[2].IN1
+sw[3] => sw[3].IN1
+sw[4] => sw[4].IN1
+led[0] <= game:comb_5.port3
+led[1] <= game:comb_5.port3
+led[2] <= game:comb_5.port3
+led[3] <= game:comb_5.port3
+led[4] <= game:comb_5.port3
+outa[0] <= seg:comb_21.port1
+outa[1] <= seg:comb_21.port1
+outa[2] <= seg:comb_21.port1
+outa[3] <= seg:comb_21.port1
+outa[4] <= seg:comb_21.port1
+outa[5] <= seg:comb_21.port1
+outa[6] <= seg:comb_21.port1
+outa[7] <= seg:comb_21.port1
+outb[0] <= seg:comb_22.port1
+outb[1] <= seg:comb_22.port1
+outb[2] <= seg:comb_22.port1
+outb[3] <= seg:comb_22.port1
+outb[4] <= seg:comb_22.port1
+outb[5] <= seg:comb_22.port1
+outb[6] <= seg:comb_22.port1
+outb[7] <= seg:comb_22.port1
+outc[0] <= seg:comb_23.port1
+outc[1] <= seg:comb_23.port1
+outc[2] <= seg:comb_23.port1
+outc[3] <= seg:comb_23.port1
+outc[4] <= seg:comb_23.port1
+outc[5] <= seg:comb_23.port1
+outc[6] <= seg:comb_23.port1
+outc[7] <= seg:comb_23.port1
+outd[0] <= seg:comb_24.port1
+outd[1] <= seg:comb_24.port1
+outd[2] <= seg:comb_24.port1
+outd[3] <= seg:comb_24.port1
+outd[4] <= seg:comb_24.port1
+outd[5] <= seg:comb_24.port1
+outd[6] <= seg:comb_24.port1
+outd[7] <= seg:comb_24.port1
+
+
+|final|timerclock:comb_3
+clk_in => clk_out~reg0.CLK
+clk_in => period_count[0].CLK
+clk_in => period_count[1].CLK
+clk_in => period_count[2].CLK
+clk_in => period_count[3].CLK
+clk_in => period_count[4].CLK
+clk_in => period_count[5].CLK
+clk_in => period_count[6].CLK
+clk_in => period_count[7].CLK
+clk_in => period_count[8].CLK
+clk_in => period_count[9].CLK
+clk_in => period_count[10].CLK
+clk_in => period_count[11].CLK
+clk_in => period_count[12].CLK
+clk_in => period_count[13].CLK
+clk_in => period_count[14].CLK
+clk_in => period_count[15].CLK
+clk_in => period_count[16].CLK
+clk_in => period_count[17].CLK
+clk_in => period_count[18].CLK
+clk_in => period_count[19].CLK
+clk_in => period_count[20].CLK
+clk_in => period_count[21].CLK
+clk_in => period_count[22].CLK
+clk_in => period_count[23].CLK
+clk_in => period_count[24].CLK
+clk_in => period_count[25].CLK
+clk_in => period_count[26].CLK
+clk_in => period_count[27].CLK
+clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|timercount:comb_4
+clk => clk.IN1
+reset => current_count.OUTPUTSELECT
+reset => current_count.OUTPUTSELECT
+reset => current_count.OUTPUTSELECT
+reset => current_count.OUTPUTSELECT
+reset => current_count.OUTPUTSELECT
+reset => current_count.OUTPUTSELECT
+count[0] <= current_count[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= current_count[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= current_count[2].DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= current_count[3].DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= current_count[4].DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= current_count[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|timercount:comb_4|timerclock:c
+clk_in => clk_out~reg0.CLK
+clk_in => period_count[0].CLK
+clk_in => period_count[1].CLK
+clk_in => period_count[2].CLK
+clk_in => period_count[3].CLK
+clk_in => period_count[4].CLK
+clk_in => period_count[5].CLK
+clk_in => period_count[6].CLK
+clk_in => period_count[7].CLK
+clk_in => period_count[8].CLK
+clk_in => period_count[9].CLK
+clk_in => period_count[10].CLK
+clk_in => period_count[11].CLK
+clk_in => period_count[12].CLK
+clk_in => period_count[13].CLK
+clk_in => period_count[14].CLK
+clk_in => period_count[15].CLK
+clk_in => period_count[16].CLK
+clk_in => period_count[17].CLK
+clk_in => period_count[18].CLK
+clk_in => period_count[19].CLK
+clk_in => period_count[20].CLK
+clk_in => period_count[21].CLK
+clk_in => period_count[22].CLK
+clk_in => period_count[23].CLK
+clk_in => period_count[24].CLK
+clk_in => period_count[25].CLK
+clk_in => period_count[26].CLK
+clk_in => period_count[27].CLK
+clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final|game:comb_5
+clk => current_state~1.DATAIN
+sw[0] => Selector8.IN3
+sw[0] => Selector10.IN3
+sw[0] => next_state.S13.DATAB
+sw[0] => Selector16.IN1
+sw[0] => Selector9.IN1
+sw[0] => Selector7.IN1
+sw[1] => Selector5.IN3
+sw[1] => Selector11.IN3
+sw[1] => Selector10.IN1
+sw[1] => next_state.0000.DATAB
+sw[2] => Selector7.IN3
+sw[2] => Selector13.IN3
+sw[2] => Selector15.IN3
+sw[2] => Selector14.IN1
+sw[2] => Selector12.IN1
+sw[2] => Selector6.IN1
+sw[3] => Selector6.IN3
+sw[3] => Selector14.IN3
+sw[3] => Selector13.IN1
+sw[3] => Selector5.IN1
+sw[4] => Selector9.IN3
+sw[4] => Selector12.IN3
+sw[4] => Selector16.IN3
+sw[4] => Selector15.IN1
+sw[4] => Selector11.IN1
+sw[4] => Selector8.IN1
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+led[0] <= WideOr14.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= WideOr13.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= WideOr12.DB_MAX_OUTPUT_PORT_TYPE
+score[0] <= score[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+score[1] <= score[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+score[2] <= score[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+score[3] <= score[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+score[4] <= <GND>
+counter_out[0] => Equal0.IN31
+counter_out[1] => Equal0.IN30
+counter_out[2] => Equal0.IN29
+counter_out[3] => Equal0.IN28
+counter_out[4] => Equal0.IN27
+counter_out[5] => Equal0.IN26
+
+
+|final|seg:comb_21
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= <VCC>
+
+
+|final|seg:comb_22
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= <VCC>
+
+
+|final|seg:comb_23
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= <VCC>
+
+
+|final|seg:comb_24
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= <VCC>
+
+

@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'game:comb_5|current_state.1110'
+Slack : -3.989
+TNS   : -15.390
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -2.786
+TNS   : -79.539
+
+Type  : Slow 1200mV 85C Model Setup 'timercount:comb_4|timerclock:c|clk_out'
+Slack : -1.232
+TNS   : -7.392
+
+Type  : Slow 1200mV 85C Model Setup 'game:comb_5|score[0]'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'game:comb_5|score[0]'
+Slack : -1.110
+TNS   : -3.145
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -0.007
+TNS   : -0.007
+
+Type  : Slow 1200mV 85C Model Hold 'timercount:comb_4|timerclock:c|clk_out'
+Slack : 0.818
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'game:comb_5|current_state.1110'
+Slack : 3.037
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -47.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'timercount:comb_4|timerclock:c|clk_out'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'game:comb_5|score[0]'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'game:comb_5|current_state.1110'
+Slack : 0.426
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'game:comb_5|current_state.1110'
+Slack : -3.512
+TNS   : -13.571
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -2.459
+TNS   : -66.003
+
+Type  : Slow 1200mV 0C Model Setup 'timercount:comb_4|timerclock:c|clk_out'
+Slack : -1.015
+TNS   : -6.090
+
+Type  : Slow 1200mV 0C Model Setup 'game:comb_5|score[0]'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'game:comb_5|score[0]'
+Slack : -0.930
+TNS   : -2.323
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -0.009
+TNS   : -0.009
+
+Type  : Slow 1200mV 0C Model Hold 'timercount:comb_4|timerclock:c|clk_out'
+Slack : 0.746
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'game:comb_5|current_state.1110'
+Slack : 2.801
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -47.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'timercount:comb_4|timerclock:c|clk_out'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'game:comb_5|current_state.1110'
+Slack : 0.449
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'game:comb_5|score[0]'
+Slack : 0.470
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'game:comb_5|current_state.1110'
+Slack : -1.847
+TNS   : -7.174
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.142
+TNS   : -27.961
+
+Type  : Fast 1200mV 0C Model Setup 'timercount:comb_4|timerclock:c|clk_out'
+Slack : -0.234
+TNS   : -1.404
+
+Type  : Fast 1200mV 0C Model Setup 'game:comb_5|score[0]'
+Slack : 0.319
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'game:comb_5|score[0]'
+Slack : -0.504
+TNS   : -1.486
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.113
+TNS   : -0.113
+
+Type  : Fast 1200mV 0C Model Hold 'timercount:comb_4|timerclock:c|clk_out'
+Slack : 0.418
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'game:comb_5|current_state.1110'
+Slack : 1.731
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -49.488
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'timercount:comb_4|timerclock:c|clk_out'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'game:comb_5|score[0]'
+Slack : 0.285
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'game:comb_5|current_state.1110'
+Slack : 0.435
+TNS   : 0.000
+
+------------------------------------------------------------
