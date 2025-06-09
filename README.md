@@ -8,7 +8,7 @@
 LED 5 顆  
 Switch 6 個  
 顯示器 4 個（七段顯示器 4 位數）
-
+![image](https://github.com/EmilyChang6/Whack-a-mole-FPGA-/blob/main/DE0.png)
 ## 操作說明
 (1) 啟動遊戲：開啟switch_9  
 (2) 當Led亮時，在時間內開啟／關閉對應的switch 使Led變暗，則會獲得一分
